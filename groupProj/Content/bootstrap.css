@@ -4190,14 +4190,20 @@ textarea.input-group-sm > .input-group-btn > .btn {
   bottom: 0;
   margin-bottom: 0;
 }
+.logo {
+    float:left;
+    width:200px;
+}
 
 .navbar-brand {
   float: left;
-  padding: 15px 15px;
-  font-size: 18px;
-  line-height: 20px;
+    background: url(../images/tetherLogo.png) no-repeat top left;
+     display: block;
+     text-indent: -9999px; 
 }
-
+.navbar-brand img {
+     width: 150px;     
+}
 .navbar-brand:hover,
 .navbar-brand:focus {
   text-decoration: none;
@@ -4240,14 +4246,23 @@ textarea.input-group-sm > .input-group-btn > .btn {
 
 .navbar-nav {
   margin: 7.5px -15px;
+  margin-left:10px!important;
 }
 
 .navbar-nav > li > a {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 30px!important;
+  padding-bottom: 30px!important;
   line-height: 20px;
+  font-size: 30px;
+  font-family:'Agency FB',Arial;
+  color:orange!important;
 }
-
+.navbar-nav > li > a:hover {
+  padding-top: 30px!important;
+  padding-bottom: 30px!important;
+  background-color:#f60f0f!important;
+  color:white!important;
+}
 @media (max-width: 767px) {
   .navbar-nav .open .dropdown-menu {
     position: static;
@@ -4501,7 +4516,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 }
 
 .navbar-inverse {
-  background-color: #222222;
+  background-color: #FFFFFF;
   border-color: #080808;
 }
 
