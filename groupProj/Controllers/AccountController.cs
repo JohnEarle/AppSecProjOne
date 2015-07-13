@@ -71,6 +71,8 @@ namespace groupProj.Controllers
             if (!ModelState.IsValid)
             {
                 return View(model);
+
+
             }
 
             // This doesn't count login failures towards account lockout
@@ -481,5 +483,13 @@ namespace groupProj.Controllers
             }
         }
         #endregion
+        private void MigrateShoppingCart(string UserName)
+        {
+            // Associate shopping cart items with logged-in user
+            var cart = ShoppingCart.GetCart(this.HttpContext);
+
+            cart.MigrateCart(UserName);
+            Session[ShoppingCart.CartSessionKey] = UserName;
+        }
     }
 }

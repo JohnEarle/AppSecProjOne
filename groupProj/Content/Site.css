@@ -30,9 +30,18 @@
     font-size:32px;
     color:white;
 }
+/*banner image*/
 #networkimage {
     width:100%;
     margin-top:-80px;
+}
+/*header images for sections*/
+#protectionimage {
+    width:80%;
+}#managementimage {
+    width:80%;
+}#encryptionimage {
+    width:80%;
 }
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
