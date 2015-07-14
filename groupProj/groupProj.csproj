@@ -226,6 +226,8 @@
       <DependentUpon>productModel.edmx</DependentUpon>
       <LastGenOutput>productModel.cs</LastGenOutput>
     </Content>
+    <None Include="Properties\PublishProfiles\tethernerworking - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\tethernerworking - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\tetherNetwork.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

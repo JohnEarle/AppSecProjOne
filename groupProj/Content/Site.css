@@ -26,22 +26,30 @@
   width: 980px;
   padding-top: 5px;
 }
+.logo {
+    float:left;
+    width:200px;
+}
 #titlewrap h2 {
     font-size:32px;
     color:white;
+}
+/*The Front Page 3 Icons*/
+.boximage{
+    padding:10px;
+    width:300px;
 }
 /*banner image*/
 #networkimage {
     width:100%;
     margin-top:-80px;
 }
-/*header images for sections*/
-#protectionimage {
-    width:80%;
-}#managementimage {
-    width:80%;
-}#encryptionimage {
-    width:80%;
+/*Login and Register font need to be smaller and dynamic to the overall navbar*/
+#registerLink{
+    font-size:1.6em;
+}
+#loginLink{
+    font-size:1.6em;
 }
 /* Override the default bootstrap behavior where horizontal description lists 
    will truncate terms that are too long to fit in the left column 
