@@ -12,7 +12,8 @@
             @Html.DisplayNameFor(model => model.Price)
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Photo)
+            Available for Purchase
+            <!-- Html.DisplayNameFor(model => model.Photo)-->
         </th>
         <th></th>
     </tr>
@@ -29,7 +30,10 @@
             @Html.DisplayFor(modelItem => item.Price)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.Photo)
+            <p class="button">
+                @Html.ActionLink("Add to cart", "AddToCart",
+        "ShoppingCart", new { id = item.ID }, "")
+            </p>
         </td>
     </tr>
 }

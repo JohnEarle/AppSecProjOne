@@ -13,7 +13,7 @@ namespace groupProj.Controllers
     [Authorize] 
     public class ProductsController : Controller
     {
-        private tetherEntities db = new tetherEntities();
+        public tetherEntities db = new tetherEntities();
 
         // GET: Products
         public ActionResult Index()

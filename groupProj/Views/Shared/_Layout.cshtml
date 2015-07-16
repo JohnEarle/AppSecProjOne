@@ -25,6 +25,7 @@
                     <li>@Html.ActionLink("About", "About", "Home")</li>
                     <li>@Html.ActionLink("Firewalls", "Store", "Products")</li>
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li></li>
                 </ul>
                 @Html.Partial("_LoginPartial")
             </div>
@@ -34,7 +35,7 @@
         @RenderBody()
         <hr />
         <footer>
-            <p>&copy; @DateTime.Now.Year - Tether Networking</p>
+            <p id="footer">&copy; @DateTime.Now.Year - Tether Networking</p>
         </footer>
     </div>
 
